@@ -186,9 +186,9 @@ The frontend will run on `http://localhost:3000`
 ```javascript
 {
   _id: ObjectId,
-  name: String (required, 2-50 characters),
-  email: String (required, unique, validated),
-  password: String (required, hashed, min 6 chars with complexity rules),
+  name: String (required, trimmed, 2–50 characters),
+  email: String (required, unique, lowercase, validated format),
+  password: String (required, hashed, min 6 chars with uppercase, lowercase, number, special char),
   role: String (enum: ['admin', 'user'], default: 'admin'),
   createdAt: Date,
   updatedAt: Date
@@ -199,19 +199,19 @@ The frontend will run on `http://localhost:3000`
 
 ```javascript
 {
+ {
   _id: ObjectId,
-  name: String (required, 2-50 characters),
-  email: String (required, unique, validated),
-  password: String (required, hashed, min 6 chars with complexity rules),
-  role: String (enum: ['admin', 'user'], default: 'user'),
-  studentId: String (unique),
-  phone: String,
-  dateOfBirth: Date,
-  address: String,
-  course: String,
-  year: Number,
+  firstName: String (required, trimmed, 2–50 characters),
+  lastName: String (required, trimmed, 2–50 characters),
+  email: String (required, unique, lowercase, validated format),
+  phone: String (required, valid Indian number),
+  course: String (required, trimmed),
+  enrollmentNumber: String (required, unique, format: ABCD-123-456),
+  admissionDate: Date (required),
+  user: ObjectId (required, reference to User),
   createdAt: Date,
   updatedAt: Date
+}
 }
 ```
 
