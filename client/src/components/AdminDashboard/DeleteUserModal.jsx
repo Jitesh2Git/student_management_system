@@ -34,9 +34,9 @@ const DeleteUserModal = ({ user, onCancel }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex flex-col gap-2 text-left mb-4">
-          <h2 className="text-lg font-semibold leading-none">Delete Task</h2>
+          <h2 className="text-lg font-semibold leading-none">Delete User</h2>
           <p className="text-sm text-muted-foreground">
-            Are you sure you want to delete this task? This action cannot be
+            Are you sure you want to delete this user? This action cannot be
             undone.
           </p>
         </div>
