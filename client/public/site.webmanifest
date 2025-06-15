@@ -1,0 +1,22 @@
+{
+  "name": "EduPanel — Student Management System",
+  "short_name": "EduPanel",
+  "description": "EduPanel is a simple CRUD-based student management system to efficiently handle student records.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
