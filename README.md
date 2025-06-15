@@ -9,7 +9,7 @@ A comprehensive student management system built with the MERN stack, featuring r
 
 ## 📹 Demo Video
 
-https://github.com/user-attachments/assets/a9ae5381-d463-449d-b26b-cde5bbbaee9a
+https://github.com/user-attachments/assets/f44720ea-a20b-4779-81a7-4438770140f7
 
 ## 🚀 Features
 
